@@ -1,0 +1,233 @@
+:root {
+  --iris-color: #4d5ae5;
+  --ocean-color: #404bbf;
+  --navy-blue-color: #2e2f42;
+  --green-color: #31d0aa;
+  --slate-color: #434455;
+  --light-slate-color: #8e8f99;
+  --cornflower-color: #e7e9fc;
+  --cloud-color: #f4f4fd;
+  --white-color: #fff;
+}
+
+/* General */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--navy-blue-color);
+}
+.hidden {
+  display: none;
+}
+/* Header */
+.page-header {
+  border-bottom: 1px solid var(--cornflower-color);
+  padding: 24px 0;
+}
+/* Navigation */
+/* Logo */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: currentColor;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.logo-accent {
+  color: var(--iris-color);
+}
+.nav-item {
+  list-style: none;
+}
+.nav-link {
+  color: currentColor;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--ocean-color);
+}
+.contacts-item {
+  list-style: none;
+  font-style: normal;
+}
+.contacts-link {
+  color: var(--slate-color);
+  text-decoration: none;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--ocean-color);
+}
+/* index.html */
+/* Main */
+/* Hero */
+.hero {
+  background-color: var(--navy-blue-color);
+  text-align: center;
+}
+.hero-title {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+.hero-btn {
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--iris-color);
+  border: none;
+  padding: 16px 32px;
+  gap: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--ocean-color);
+  cursor: pointer;
+}
+
+/* Advantages */
+.advantages-item {
+  list-style: none;
+}
+.advantages-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.advantages-item-text {
+  color: var(--slate-color);
+  font-weight: 400;
+  font-size: 1.5;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+/* Offer */
+.offer-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+.offer-list {
+  list-style: none;
+}
+
+/* Team */
+.team {
+  background-color: var(--cloud-color);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.team-card {
+  list-style: none;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-color);
+}
+.team-card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.team-card-text {
+  color: var(--slate-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+/* General */
+/* Footer */
+.page-footer {
+  background-color: var(--navy-blue-color);
+  padding: 100px 0;
+}
+.page-footer > .logo {
+  color: var(--cloud-color);
+}
+.footer-text {
+  color: var(--cornflower-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+  margin-top: 16px;
+}
+/* portfolio.html */
+/* main */
+/* filters */
+.filter-list {
+  padding-top: 96px;
+  margin-bottom: 72px;
+}
+.filter-item {
+  list-style: none;
+}
+.filter-btn {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 12px 24px;
+  color: var(--iris-color);
+  background-color: var(--cloud-color);
+  border: 1px solid var(--cornflower-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.active {
+  color: var(--white-color);
+  background-color: var(--iris-color);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--white-color);
+  background-color: var(--ocean-color);
+}
+/* Maps card */
+.map-card {
+  list-style: none;
+  border: 1px solid var(--cornflower-color);
+}
+.map-cards-content {
+  padding: 32px 0;
+}
+.map-cards-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.map-cards-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
+}
