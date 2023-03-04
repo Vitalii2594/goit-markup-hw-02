@@ -73,6 +73,7 @@ body {
 }
 
 /* SECTIONS */
+/* SECTION 1 */
 /* ======================== HERO ========================  */
 .hero {
   background-color: #2e2f42;
@@ -91,73 +92,77 @@ body {
   height: 56px;
   cursor: pointer;
 }
-
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--navigation-active);
 }
-
-.thirdly-title {
-  font-weight: 700;
+/* SECTION 2 */
+.about-title {
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
 }
-
-.second-title {
+.about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-slate);
+}
+/* SECTION 3 */
+.offer-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark);
+}
+/* SECTION 4 */
+.our-team {
+  background-color: #f4f4fd;
+}
+.our-team-title {
+  font-weight: 700;
+  font-size: 1.2;
+  line-height: 40px;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark);
 }
-
-.hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.main-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+.team-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--white-text-color);
+  color: var(--dark);
 }
-
-.ourteam {
-  background-color: #f4f4fd;
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--text-slate);
 }
-
-/* ======================== /EMPLOYEES ======================== */
-
 /* ======================== FOOTER ======================== */
 
 .footer {
   background-color: #2e2f42;
 }
 
-.footer-description {
+.footer-text {
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--accent);
 }
-
-/* ======================== /FOOTER ========================  */
 
 /* ======================= PORTFOLIO ========================= */
 
