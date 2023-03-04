@@ -4,7 +4,7 @@
   --primary-brand: #4d5ae5;
   --dark: #2e2f42;
   --success: #31d0aa;
-  --text: #434455;
+  --text-slate: #434455;
   --subtle-text: #8e8f99;
   --accent: #e7e9fc;
   --light: #f4f4fd;
@@ -22,36 +22,57 @@
 
 body {
   font-family: var(--primary-font);
-  color: var(--text);
+  color: var(--text-slate);
   background-color: var(--white-text-color);
   font-size: 16px;
 }
 
+/* ======================== HEADER ======================== */
+/* ========================  LOGO  ======================== */
 .logo {
   font-family: var(--secondary-font);
   font-weight: 800;
   color: var(--primary-brand);
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 .logo-textdark {
   color: var(--dark);
 }
-
 .logo-textlight {
   color: var(--light);
 }
-
-.section-description {
+/* NAVIGATION */
+.nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--navigation-active);
+}
+/* CONTACTS */
+.address {
+  font-style: normal;
+}
+.contact-link {
+  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
 }
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--navigation-active);
+}
 
+/* SECTIONS */
 .thirdly-title {
   font-weight: 700;
   font-size: 20px;
@@ -83,29 +104,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/* ====================== /COMPONENTS ===================== */
-
-/* ======================== HEADER ======================== */
-
-.menu-link {
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--dark);
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: #404bbf;
-}
-
-.contact-link:hover,
-.contact-link:focus {
-  color: #404bbf;
-}
-
-/* ======================== /HEADER ========================  */
 
 /* ======================== HERO ========================  */
 
