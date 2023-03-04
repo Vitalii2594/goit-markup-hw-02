@@ -1,240 +1,202 @@
 :root {
-  --iris-color: #4d5ae5;
-  --ocean-color: #404bbf;
-  --navy-blue-color: #2e2f42;
-  --green-color: #31d0aa;
-  --slate-color: #434455;
-  --light-slate-color: #8e8f99;
-  --cornflower-color: #e7e9fc;
-  --cloud-color: #f4f4fd;
-  --white-color: #fff;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --primary-brand: #4d5ae5;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --navigation-active: #404bbf;
+  --white-text-color: #ffffff;
 }
 
-/* General */
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--slate-color);
-}
-.hidden {
-  display: none;
-}
-.link {
-  list-style: none;
-  text-decoration: none;
-}
 .list {
   list-style: none;
 }
-/* Header */
-.page-header {
-  border-bottom: 1px solid var(--cornflower-color);
-  padding: 24px 0;
-}
-/* Navigation */
-/* Logo */
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  color: var(--iris-color);
-  letter-spacing: 0.03em;
+
+.link {
   text-decoration: none;
-  text-transform: uppercase;
-}
-.logo-textdark {
-  color: var(--navy-blue-color);
 }
 
-.nav-link {
-  color: currentColor;
-  text-decoration: none;
-  font-weight: 500;
+body {
+  font-family: var(--primary-font);
+  color: var(--text);
+  background-color: var(--white-text-color);
+  font-size: 16px;
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  color: var(--primary-brand);
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-textdark {
+  color: var(--dark);
+}
+
+.logo-textlight {
+  color: var(--light);
+}
+
+.section-description {
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--text);
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--ocean-color);
-}
-.contacts-item {
-  list-style: none;
-  font-style: normal;
-}
-.contacts-link {
-  color: var(--slate-color);
-  text-decoration: none;
-  line-height: 1.5;
+
+.thirdly-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--dark);
 }
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--ocean-color);
-}
-/* index.html */
-/* Main */
-/* Hero */
-.hero {
-  background-color: var(--navy-blue-color);
+
+.second-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark);
 }
-.hero-title {
-  color: var(--white-color);
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ====================== /COMPONENTS ===================== */
+
+/* ======================== HEADER ======================== */
+
+.menu-link {
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+
+/* ======================== /HEADER ========================  */
+
+/* ======================== HERO ========================  */
+
+.hero {
+  background-color: #2e2f42;
+}
+
+.main-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
+  text-align: center;
   letter-spacing: 0.02em;
+  color: var(--white-text-color);
 }
-.hero-btn {
-  color: var(--white-color);
-  font-weight: 500;
+
+.modal-btn {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.19;
+  display: flex;
+  align-items: center;
   font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: var(--iris-color);
-  border: none;
-  padding: 16px 32px;
-  gap: 10px;
+  color: var(--white-text-color);
+  background: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--ocean-color);
   cursor: pointer;
 }
 
-/* Advantages */
-.advantages-item {
-  list-style: none;
-}
-.advantages-item-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-.advantages-item-text {
-  color: var(--slate-color);
-  font-weight: 400;
-  font-size: 1.5;
-  line-height: 24px;
-  letter-spacing: 0.02em;
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
 }
 
-/* Offer */
-.offer-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 0.02em;
-}
-.offer-list {
-  list-style: none;
+/* ======================== /HERO ======================== */
+
+/* ======================== ABOUT ======================== */
+
+/* ======================== /ABOUT ========================  */
+
+/* ======================== OFFER ========================  */
+
+/* ======================== /OFFER ======================== */
+
+/* ======================== EMPLOYEES ======================== */
+
+.ourteam {
+  background-color: #f4f4fd;
 }
 
-/* Team */
-.team {
-  background-color: var(--cloud-color);
+/* ======================== /EMPLOYEES ======================== */
+
+/* ======================== FOOTER ======================== */
+
+.footer {
+  background-color: #2e2f42;
 }
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
-.team-card {
-  list-style: none;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
-  background-color: var(--white-color);
-}
-.team-card-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-.team-card-text {
-  color: var(--slate-color);
+
+.footer-description {
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+/* ======================== /FOOTER ========================  */
+
+/* ======================= PORTFOLIO ========================= */
+
+.portfolio-btn {
+  /* Чи треба вказувати ще раз font-family якщо ми маємо його в body? */
+  font-family: var(--white-text-color);
+  font-weight: 700;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
   text-align: center;
-  letter-spacing: 0.02em;
-}
-/* General */
-/* Footer */
-.page-footer {
-  background-color: var(--navy-blue-color);
-  padding: 100px 0;
-}
-.page-footer > .logo {
-  color: var(--cloud-color);
-}
-.footer-text {
-  color: var(--cornflower-color);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  max-width: 264px;
-  margin-top: 16px;
-}
-/* portfolio.html */
-/* main */
-/* filters */
-.filter-list {
-  padding-top: 96px;
-  margin-bottom: 72px;
-}
-.filter-item {
-  list-style: none;
-}
-.filter-btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--iris-color)
-  padding: 12px 24px;
-  background-color: var(--cloud-color);
-  border: 1px solid var(--cornflower-color);
+  color: var(--primary-brand);
+  background: var(--light);
+  border: 1px solid var(--accent);
   border-radius: 4px;
   cursor: pointer;
 }
-.active-btn {
-  color: var(--white-color);
-  background-color: var(--iris-color);
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--white-text-color);
+  background: var(--primary-brand);
 }
-.filter-btn:hover,
-.filter-btn:focus {
-  color: var(--white-color);
-  background-color: var(--ocean-color);
-}
-/* Maps card */
-.map-card {
-  list-style: none;
-  border: 1px solid var(--cornflower-color);
-}
-.map-cards-content {
-  padding: 32px 0;
-}
-.map-cards-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-.map-cards-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--slate-color);
-}
+/*======================= /PORTFOLIO =========================   */
