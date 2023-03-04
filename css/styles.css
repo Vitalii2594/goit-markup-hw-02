@@ -13,10 +13,17 @@
 /* General */
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--navy-blue-color);
+  --slate-color: #434455;
 }
 .hidden {
   display: none;
+}
+.link {
+  list-style: none;
+  text-decoration: none;
+}
+.list {
+  list-style: none;
 }
 /* Header */
 .page-header {
@@ -30,7 +37,7 @@ body {
   font-weight: 800;
   color: currentColor;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
@@ -38,9 +45,7 @@ body {
 .logo-accent {
   color: var(--iris-color);
 }
-.nav-item {
-  list-style: none;
-}
+
 .nav-link {
   color: currentColor;
   text-decoration: none;
@@ -191,12 +196,13 @@ body {
   list-style: none;
 }
 .filter-btn {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  color: var(--iris-color)
   padding: 12px 24px;
-  color: var(--iris-color);
   background-color: var(--cloud-color);
   border: 1px solid var(--cornflower-color);
   border-radius: 4px;
