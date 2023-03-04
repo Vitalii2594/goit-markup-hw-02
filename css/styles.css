@@ -13,7 +13,7 @@
 /* General */
 body {
   font-family: "Roboto", sans-serif;
-  --slate-color: #434455;
+  color: var(--slate-color);
 }
 .hidden {
   display: none;
